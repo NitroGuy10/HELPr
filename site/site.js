@@ -1,8 +1,12 @@
+console.log("Hello, site.js!")
+
 const express = require("express")
 const app = express()
 const port = 3000
 
-console.log("Hello, site.js!")
+const tickets = require("../tickets/tickets.js")
+const db = require("../database/sqlite3/database")
+
 
 app.use("/static", express.static("site/static"))
 app.use(express.static("site/pages"))
@@ -10,8 +14,11 @@ app.use(express.static("site/pages"))
 app.use(express.json())
 
 app.post("/ticket", (request, response) => {
-    console.log(request.body)
-    response.json({message: "this is my response!"})
+    let ticket = tickets.makeFromRequest(request)
+    db.putTicket(ticket, () =>
+    {
+        response.json({message: "this is my response!"})
+    })
 })
 
 app.listen(port, () => {

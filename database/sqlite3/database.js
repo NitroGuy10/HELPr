@@ -1,10 +1,24 @@
 module.exports = {
-    hello
+    putTicket,
+    contains
 }
+
+console.log("Hello, database.js!")
 
 const sql = require("sqlite3")
 
-function hello()
+function putTicket (ticket, callback)
 {
-    console.log("Hello, database.js!")
+    // TODO this
+    console.log(ticket)
+
+    callback()
+}
+
+function contains (table, column, value)
+{
+    // TODO return true if something exists in the database
+    // something something SELECT * FROM table WHERE column = value
+
+    return
 }

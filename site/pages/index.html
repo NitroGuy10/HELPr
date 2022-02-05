@@ -10,23 +10,6 @@
 </head>
 <body>
     <h1>Hello, HELPr!</h1>
-    <button onclick="testRequest()">request</button>
-
-    <script>
-        function testRequest ()
-        {
-            fetch("/ticket", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({message: "i made a request!"})
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-            })
-        }
-    </script>
+    <p><a href="submit_ticket.html">DEBUG: Submit a ticket</a></p>
 </body>
 </html>
