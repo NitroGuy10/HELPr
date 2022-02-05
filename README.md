@@ -1,2 +1,2 @@
-# ham
-Help and mentor hackers in need of assistance
+# HELPr
+A spiritual successor to [HELPq](https://github.com/ehzhang/HELPq)

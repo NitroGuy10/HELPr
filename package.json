@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "socket.io": "^4.4.1",
+    "sqlite3": "^5.0.2"
+  },
+  "name": "helpr",
+  "description": "A spiritual successor to HELPq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "create_db_sqlite3": "node database/sqlite3/create_database.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NitroGuy10/HELPr.git"
+  },
+  "author": {
+    "name": "NitroGuy10",
+    "website": "https://nitroguy10.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/NitroGuy10/HELPr/issues"
+  },
+  "homepage": "https://github.com/NitroGuy10/HELPr#readme",
+  "license": "AGPL-3.0-or-later"
+}
